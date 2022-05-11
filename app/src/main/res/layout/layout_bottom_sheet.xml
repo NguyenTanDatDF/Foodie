@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="120dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="15dp"
+    android:text="Add to cart"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/roudedImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/restaurant1"
+            app:riv_corner_radius="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/sheet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here you are"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free Delivery"
+                android:textColor="#8A8181"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/sheet_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$30"
+                android:textColor="#F18484"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            />
+
+<Button
+
+    android:text="Add to cart"
+    android:backgroundTint="#2196F3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/buttonBuy"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    />
+</LinearLayout>

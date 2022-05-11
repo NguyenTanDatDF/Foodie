@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartActivity">
+
+    <ImageView
+        android:id="@+id/voucher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Shipping_m"
+        android:src="@drawable/ic_voucher"
+        android:layout_marginBottom="13dp"
+        />
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_back"
+        />
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Product in Cart"
+        app:layout_constraintTop_toBottomOf="@+id/back_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/rcv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="101dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        />
+    <TextView
+        android:id="@+id/tv_ShipInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shiping Info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_cart"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tv_Shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shiping Info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShipInfo"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_Subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Shipping"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Subtotal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btn_Checkout"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Total"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="CHECK OUT"
+        />
+
+    <TextView
+        android:id="@+id/tv_Shipping_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="free"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShipInfo"
+        tools:layout_editor_absoluteX="337dp" />
+
+
+    <TextView
+        android:id="@+id/tv_Subtotal_m"
+        android:layout_marginRight="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/unit1"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_Shipping"
+        tools:layout_editor_absoluteX="317dp" />
+
+    <TextView
+        android:id="@+id/unit1"
+        android:layout_marginRight="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="$"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_Shipping"
+        tools:layout_editor_absoluteX="317dp" />
+
+    <TextView
+        android:id="@+id/tv_Total_m"
+        android:layout_marginRight="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginLeft="280dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Subtotal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/unit2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/unit2"
+        android:layout_marginRight="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:layout_marginLeft="280dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Subtotal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

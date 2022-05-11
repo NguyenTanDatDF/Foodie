@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#436A6464"
+
+    >
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/voucher_img" />
+
+    <TextView
+        android:id="@+id/tvName_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Ăn nhiều giảm nhiều"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tvPrice_voucher"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName_voucher"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="10"
+        android:textColor="@color/black"
+
+        android:textSize="10dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/Per_voucher"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName_voucher"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="%"
+        android:textColor="@color/black"
+
+        android:textSize="10dp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/btn_use"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="USE"
+        android:textSize="8sp"
+
+        />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
